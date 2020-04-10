@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1 id="header"> Student</h1>
+
+    <div id="studentinfo">
+      <br>Gayane Gabrielyan</br>
+      <br>ID:A000000</br>
+    </div>
+
+    <table id="studentGrades">
+      <tr>
+        <th>Methods of evaluation</th>
+        <th>Percantage</th>
+        <th>Grade</th>
+      </tr> 
+      <tr>
+        <td>Participation</td>
+        <td>10</td>
+        <td>
+          <input type="text" id="ParticipationGrade" value=80
+      </tr>
+      <tr>
+        <td>Homework</td>
+        <td>20</td>
+        <td>
+          <input type="text" id="HMWGrade" value=77
+      </tr>
+      <tr>
+        <td>Quiz</td>
+        <td>10</td>
+        <td>
+           <input type="text" id="QuizGrade" value=75
+      </tr>
+      <tr>
+        <td>Project 1</td>
+        <td>30</td>
+        <td>
+          <input type="text" id="PM1Grade" value=95
+      </tr>
+      <tr>
+        <td>Project 2</td>
+        <td>30</td>
+        <td>
+          <input type="text" id="PM2Grade" value=88
+      </tr>
+    </table>
+    <div>
+      <button onclick= "Calculate Current Grade()"><id=currentgrade> Calculate Current Grade </button>
+    </div>
+    <div id="currentgrade">
+      <label>Current grade: </label>
+      <span>85.8</span>
+    </div>
+
+  </body>
+
+</html>
+
+
+
+
+
+function Calculate Current Grade(){
+
+  var Participation=0
+  var HW=0
+  var Quiz=0
+  var PM1=0
+  var PM2=0
+  
+  var Participation=parseInt(document.getElementById("Participation").innerHTML)
+
+  var ParticipationGrade=parseFloat(document.getElementById("ParticipationGrade").value)
+
+  var currentgrade= Participation*ParticipationGrade/100
+  console.log(currentgrade)
+
+  document.getElementById("currentgrade").innerHTML=currentgrade
+
+
+  var HW=parseInt(document.getElementById("HW").innerHTML)
+
+  var HWGrade=parseFloat(document.getElementById("HWGrade").value)
+
+  var currentgrade= HW*HWGrade/100
+  console.log(currentgrade)
+
+  document.getElementById("currentgrade").innerHTML=currentgrade
+
+  var Quiz=parseInt(document.getElementById("Quiz").innerHTML)
+
+  var QuizGrade=parseFloat(document.getElementById("QuizGrade").value)
+
+  var currentgrade= Quiz*QuizGrade/100
+  console.log(currentgrade)
+
+  document.getElementById("currentgrade").innerHTML=currentgrade
+
+  var PM1=parseInt(document.getElementById("PM1").innerHTML)
+
+  var PM1Grade=parseFloat(document.getElementById("PM1Grade").value)
+
+  var currentgrade= PM1*PM1Grade/100
+  console.log(currentgrade)
+
+  document.getElementById("currentgrade").innerHTML=currentgrade
+
+  var PM2=parseInt(document.getElementById("PM2").innerHTML)
+
+  var PM2Grade=parseFloat(document.getElementById("PM2Grade").value)
+
+  var currentgrade= PM2*PM2Grade/100
+  console.log(currentgrade)
+
+  document.getElementById("currentgrade").innerHTML=currentgrade
+
+
+
+}
+
+
+
+
+
+#header {
+  background-color: blanchedalmond;
+  color: black;
+  padding: 20px;
+  text-align: right;
+  margin: 0px;
+  }
+
+#studentinfo {
+ background-color: peachpuff;
+ color: black;
+ padding: 10px;
+ margin: 0px;
+ text-align: right;
+ }
+
+#studentGrades {
+ background-color: bisque;
+ margin: 0px;
+ width: 100%;
+ }
+
+#currentgrade {
+  background-color: beige;
+  font-size: 120%;
+  margin: 0px;
+  text-align: right;
+  padding: 10
+  px;
+}
+
+#currentgrade label {
+  font-weight: inherit;
+}
+
+#currentgrade span {
+  font-weight: bolder;
+  font-style: italic;
+}
