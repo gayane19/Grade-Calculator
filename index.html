@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <h1 id="header"> Student</h1>
+
+    <div id="studentinfo">
+      <br>Gayane Gabrielyan</br>
+      <br>ID:A000000</br>
+    </div>
+
+    <table id="studentGrades">
+      <tr>
+        <th>Methods of evaluation</th>
+        <th>Percantage</th>
+        <th>Grade</th>
+      </tr> 
+      <tr>
+        <td>Participation</td>
+        <td id="Participation">10</td>
+        <td>
+          <input type="text" id="ParticipationGrade" value="" onkeyup="checkGrade(event)">
+      </tr>
+      <tr>
+        <td>Homework</td>
+        <td id="HW">20</td>
+        <td>
+          <input type="text" id="HWGrade" value="" onkeyup="checkGrade(event)">
+      </tr>
+      <tr>
+        <td>Quiz</td>
+        <td id="Quiz">10</td>
+        <td>
+           <input type="text" id="QuizGrade" value=""onkeyup="checkGrade(event)">
+      </tr>
+      <tr>
+        <td>Project 1</td>
+        <td id= "PM1">30</td>
+        <td>
+          <input type="text" id="PM1Grade" value=""onkeyup="checkGrade(event)">
+      </tr>
+      <tr>
+        <td>Project 2</td>
+        <td id="PM2">30</td>
+        <td>
+          <input type="text" id="PM2Grade" value=""onkeyup="checkGrade(event)">
+      </tr>
+    </table>
+
+    <input type="button" value="Calculate Your Grade"
+     onclick="GradeCalculator()">
+   <hr>
+   <div id="outputGrade"></div>
+
+   <br>
+    
+   <input type="button" value="Calculate Your Letter Grade"
+    onclick="LetterGrade()">
+   <hr>
+   <div id="LetterGrade"></div>
+
+  </body>
+
+</html>
