@@ -1,0 +1,44 @@
+body, html {
+  background-color: lemonchiffon;
+  margin: 0;
+}
+
+#header {
+  background-color: blanchedalmond;
+  color: black;
+  padding: 20px;
+  text-align: right;
+  margin: 0px;
+  }
+
+#studentinfo {
+ background-color: peachpuff;
+ color: black;
+ padding: 10px;
+ margin: 0px;
+ text-align: right;
+ }
+
+#studentGrades {
+ background-color: bisque;
+ margin: 0px;
+ width: 100%;
+ }
+
+#GradeCalculator label {
+  background-color: burlywood;
+  font-size: 120%;
+  margin: 0px;
+  text-align: right;
+  padding: 10
+  px;
+}
+
+#GradeCalculator label {
+  font-weight: inherit;
+}
+
+#outputGrade span {
+  font-weight: bolder;
+  font-style: italic;
+}
